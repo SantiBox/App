@@ -9,7 +9,7 @@
         <div class="card-body text-center">
             {{----}}<h5 class="card-title">{{ $courseto->name }} </h5>
             <p class="card-text">{{ $courseto->dsc }} </p>
-            <a href="/curso/{{ $courseto->id }}/edit" class="btn btn-primary">Editar</a>
+            <a href="/cursos/{{$courseto->id}}/edit" class="btn btn-primary">Editar</a>
         </div>
 
 @endsection

@@ -17,7 +17,7 @@
         <input name="dsc" type="text" class="form-control" id="dscourse">
     </div>
     <div class="form-group">
-        <label for="ldcourse">Load Image</label>
+        <label for="ldcourse">Upload Image</label>
         <br>
         <input name="img" type="file" id="courseimg">
     </div>
