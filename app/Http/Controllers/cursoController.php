@@ -96,6 +96,7 @@ class cursoController extends Controller
             $courseto-> img = $request->file('img')->store('public');
         }
         $courseto->save();
+        return 'Actualizado con éxito';
     }
 
     /**
