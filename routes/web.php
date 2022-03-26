@@ -4,6 +4,8 @@ use App\Http\Controllers\cursoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\heladosController;
 use App\Http\Controllers\preciosController;
+use App\Http\Controllers\DocenteController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +42,5 @@ Route::get('Heladeria/{opc1}', [heladosController::class, 'helado']);
 Route::get('Precio/{prc}', [preciosController::class, 'precios']);
 
 Route::resource('cursos', cursoController::class);
+Route::resource('Docentes', DocenteController::class);
+

@@ -5,9 +5,14 @@
 <h3 class="text-center">Create a New Course</h3>
 {{--se utiliza el atrubuuto encetype para subir cualquier archivo--}}
 <form action="/cursos" method="POST"enctype="multipart/form-data">
-
-
     @csrf
+    @foreach ( $errors->all() as $alerta)
+        <div class="alert alert-danger" role="alert">
+            <ul>
+                <li>{{$alerta}}</li>
+            </ul>
+        </div>
+    @endforeach
     <div class="form-group">
         <label for="coursename">Course Name</label>
         <input name="name" type="text" class="form-control" id="coursename" aria-describedby="emailHelp">
